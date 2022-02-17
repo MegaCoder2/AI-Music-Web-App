@@ -48,6 +48,7 @@ function draw()
     stroke("#FF0000")
     if(scoreleft > 0.5)
     {
+        document.getElementById("songplaying").innerText = "Now Playing: Harry Potter Song"
         song2.stop()
         circle(leftWristX, leftWristY, 20)
         InNumberleftWristY = Number(leftWristY)
@@ -55,8 +56,9 @@ function draw()
     }
     if(scoreright > 0.5)
     {
+        document.getElementById("songplaying").innerText = "Now Playing: Peter Pan Song"
         song1.stop()
-        circle(leftWristX, leftWristY, 20)
+        circle(rightWristX, rightWristY, 20)
         InNumberleftWristY = Number(leftWristY)
         song2.play()   
     }
