@@ -43,6 +43,23 @@ function setup()
 function draw()
 {
     image(video, 0, 0, 600, 500)
+    image(video, 0, 0, 600, 500)
+    fill("#FF0000")
+    stroke("#FF0000")
+    if(scoreleft > 0.5)
+    {
+        song2.stop()
+        circle(leftWristX, leftWristY, 20)
+        InNumberleftWristY = Number(leftWristY)
+        song1.play()
+    }
+    if(scoreright > 0.5)
+    {
+        song1.stop()
+        circle(leftWristX, leftWristY, 20)
+        InNumberleftWristY = Number(leftWristY)
+        song2.play()   
+    }
 }
 function play()
 {
